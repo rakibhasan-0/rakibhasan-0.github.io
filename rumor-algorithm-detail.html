@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumor Algorithm Details - Rakib Hasan's Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Rakib Hasan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Details Section -->
+    <div class="container mt-5">
+        <h2>Rumor Algorithm Details</h2>
+
+        <p>This project simulates a network of wireless sensor nodes with short radio transmission range. Nodes detect unique events. Using the rumor-routing algorithm, a node in the network can query about an event, and the query will be routed to the node that detected that event.</p>
+        
+        <h4>Features</h4>
+        <ul>
+            <li><strong>Nodes:</strong> Each node maintains:
+                <ul>
+                    <li>A list of its neighbors.</li>
+                    <li>An event table with directions for routing a query.</li>
+                    <li>An estimate of the number of steps to the event (routing table).</li>
+                </ul>
+            </li>
+            <li><strong>Event Detection:</strong>
+                <ul>
+                    <li>On detection, a node updates its table, marking the event distance as 0.</li>
+                    <li>Events are recorded with a unique ID, timestamp, and location.</li>
+                    <li>Detection probability is 0.01% per timestep per node.</li>
+                </ul>
+            </li>
+            <li><strong>Agent Messages:</strong>
+                <ul>
+                    <li>Generated with a 50% probability upon event detection.</li>
+                    <li>Contains an event table and helps sync information across the network.</li>
+                    <li>An agent can hop a constant number of times in the network.</li>
+                </ul>
+            </li>
+            <!-- Continue with other features... -->
+        </ul>
+
+        <figure class="mt-4">
+            <img src="https://github.com/rakibhasan-0/Rumor_Algorithm/assets/15912059/6f9f9073-3d05-45a5-88f1-881b91fa08d3" alt="Rumor Algorithm Visualization" class="img-fluid">
+            <figcaption class="text-center mt-2">Rumor Algorithm Visualization</figcaption>
+        </figure>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
