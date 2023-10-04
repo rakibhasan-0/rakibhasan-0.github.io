@@ -43,8 +43,9 @@
 body {
     animation: fadeIn 1s ease, gradientBG 15s ease infinite;
     background: linear-gradient(270deg, #d53369, #daae51, #208ed8, #50c878);
-    background-size: 800% 800%;
+    background-size: 400% 400%;  /* Adjusted from 800% to 400% for more noticeable transition */
 }
+
 
 .card {
     opacity: 0;
