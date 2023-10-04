@@ -5,47 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rakib Hasan's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
 
-        h1, h2 {
-            color: #333;
-        }
-
-        a {
-            color: #0077cc;
-        }
-
-        .project {
-            margin-bottom: 20px;
-        }
-    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Welcome to Rakib Hasan's Portfolio</h1>
-    <p>Hello! I'm Rakib, an enthusiastic developer. Below you'll find some of my projects.</p>
 
-    <h2>My Projects</h2>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Rakib Hasan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="project">
-        <h3><a href="https://github.com/rakibhasan-0/Huffman-">Huffman Coding Project</a></h3>
-        <p>This is a Huffman coding project. Huffman coding is a lossless data compression algorithm.</p>
+    <!-- Introduction Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Rakib Hasan, a passionate developer. Welcome to my portfolio.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <!-- You can add a picture of yourself here -->
+            </div>
+        </div>
     </div>
 
-    <div class="project">
-        <h3><a href="https://github.com/rakibhasan-0/TheRobotS">The Robot S Project</a></h3>
-        <p>The Robot S project is an intriguing exploration into robotics. It's where mechanics meets programming to bring robots to life.</p>
+    <!-- Projects Section -->
+    <div class="container mt-5" id="projects">
+        <h2>My Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Huffman Project</h5>
+                <p class="card-text">Description about the Huffman project.</p>
+                <a href="https://github.com/rakibhasan-0/Huffman-" class="btn btn-primary">GitHub Repo</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">TheRobotS Project</h5>
+                <p class="card-text">Description about the TheRobotS project.</p>
+                <a href="https://github.com/rakibhasan-0/TheRobotS" class="btn btn-primary">GitHub Repo</a>
+            </div>
+        </div>
+
+        <!-- Add more projects as needed -->
     </div>
 
-    <h2>Contact Me</h2>
-    <p>If you're interested in collaborating or have any questions, feel free to <a href="mailto:your-email@example.com">email me</a> or visit my <a href="https://github.com/rakibhasan-0">GitHub profile</a>.</p>
-
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
-
