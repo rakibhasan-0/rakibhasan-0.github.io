@@ -36,24 +36,16 @@
         opacity: 1;
     }
 }
-
 body {
-    animation: fadeIn 1s ease;
-    background-color: #111;  /* Dark background color */
-    background-image:
-        radial-gradient(circle, #FFF1 1px, transparent 1px),  /* Stars */
-        radial-gradient(circle, #FFF2 1px, transparent 1px),
-        radial-gradient(circle, #FFF3 1px, transparent 1px);
-    background-position: 
-        0 0, 
-        25px 50px, 
-        50px 100px;
-    background-size: 
-        50px 50px, 
-        50px 50px, 
-        50px 50px;
-    animation: gentleTwinkle 4s infinite alternate;
+    background-color: #111; /* Dark background */
+    background-image: 
+        radial-gradient(white 1px, transparent 0), 
+        radial-gradient(white 1px, transparent 0), 
+        radial-gradient(white 1px, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px, 30px 30px;
 }
+
 
 .card {
     opacity: 0;
