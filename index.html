@@ -5,23 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rakib Hasan's Portfolio</title>
-
-    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Rakib Hasan</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
@@ -31,46 +29,51 @@
     </nav>
 
     <!-- Introduction Section -->
-    <div class="container mt-5">
+    <section class="container mt-5 pt-5" id="about">
         <div class="row">
             <div class="col-md-6">
                 <h2>About Me</h2>
-                <p>
-                    Hello! I'm Rakib Hasan, a passionate developer. Welcome to my portfolio.
-                </p>
+                <p>Hello! I'm Rakib Hasan, a passionate developer. Welcome to my portfolio.</p>
             </div>
             <div class="col-md-6">
                 <!-- You can add a picture of yourself here -->
+                <img src="assets/images/your_picture.jpg" alt="Your Picture" class="img-fluid rounded-circle">
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Projects Section -->
-    <div class="container mt-5" id="projects">
+    <section class="container mt-5" id="projects">
         <h2>My Projects</h2>
 
         <!-- Project 1 -->
-        <div class="card mb-4">
-            <div class="card-body">
-                <h5 class="card-title">Huffman Project</h5>
-                <p class="card-text">Description about the Huffman project.</p>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <img src="assets/images/huffman_project.png" alt="Huffman Project" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h5>Huffman Project</h5>
+                <p>Description about the Huffman project.</p>
                 <a href="https://github.com/rakibhasan-0/Huffman-" class="btn btn-primary">GitHub Repo</a>
             </div>
         </div>
 
         <!-- Project 2 -->
-        <div class="card mb-4">
-            <div class="card-body">
-                <h5 class="card-title">TheRobotS Project</h5>
-                <p class="card-text">Description about the TheRobotS project.</p>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <video width="100%" controls>
+                    <source src="assets/videos/therobots_project.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-6">
+                <h5>TheRobotS Project</h5>
+                <p>Description about the TheRobotS project.</p>
                 <a href="https://github.com/rakibhasan-0/TheRobotS" class="btn btn-primary">GitHub Repo</a>
             </div>
         </div>
+    </section>
 
-        <!-- Add more projects as needed -->
-    </div>
-
-    <!-- Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
