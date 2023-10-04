@@ -1,4 +1,4 @@
-
+/* Your Styles */
 
 .badge-yellow {
     background-color: yellow;
@@ -43,11 +43,10 @@
 }
 
 body {
-    animation: fadeIn 1s ease, gradientBG 15s ease infinite, riseStars 30s linear infinite;
+    animation: fadeIn 1s ease, gradientBG 15s ease infinite;
     background: linear-gradient(270deg, #020024, #090979, #00d4ff, #d53369, #daae51, #208ed8, #50c878);
     background-size: 400% 400%;
     position: relative;
-    overflow: hidden;
 }
 
 .card {
@@ -68,33 +67,36 @@ body {
     animation-delay: 1.1s;
 }
 
+/* Ambition Animation: Sky & Stars */
 
 @keyframes riseStars {
-    0% {
-        background-position: 0% 100%;
+    0%, 100% {
+        transform: translateY(2%); /* Adjust this value for starting and ending position */
     }
-    100% {
-        background-position: 0% 0%;
+    50% {
+        transform: translateY(-2%); /* Adjust this for peak height */
     }
 }
 
 body::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2%; /* To account for the initial translateY */
     left: 0;
     right: 0;
-    bottom: 0;
+    height: 104%; /* Adjusted for the translateY */
+    z-index: -1;
     background-image: 
-        radial-gradient(white, transparent),
-        radial-gradient(white, transparent),
-        radial-gradient(white, transparent),
-        radial-gradient(white, transparent);
+        radial-gradient(circle, white 40%, transparent 60%),
+        radial-gradient(circle, white 35%, transparent 55%);
     background-position:
         10% 90%, 
-        50% 100%, 
-        70% 90%, 
-        30% 110%;
-    background-size: 2px 2px;
-    animation: riseStars 5s linear infinite;
+        50% 60%, 
+        90% 40%, 
+        40% 80%, 
+        80% 75%, 
+        25% 55%, 
+        75% 35%;
+    background-size: 15px 15px;
+    animation: riseStars 10s ease-in-out infinite;
 }
