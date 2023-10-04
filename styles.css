@@ -17,10 +17,6 @@
     }
 }
 
-body {
-    animation: fadeIn 1s ease;
-}
-
 @keyframes slideIn {
     from {
         transform: translateX(-50px);
@@ -30,6 +26,24 @@ body {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease, gradientBG 15s ease infinite;
+    background: linear-gradient(270deg, #d53369, #daae51, #208ed8, #50c878);
+    background-size: 800% 800%;
 }
 
 .card {
@@ -49,21 +63,3 @@ body {
 .card:nth-child(3) {
     animation-delay: 1.1s;
 }
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-body {
-    animation: fadeIn 1s ease, gradientBG 15s ease infinite;
-    background: linear-gradient(270deg, #d53369, #daae51, #208ed8, #50c878);
-    background-size: 800% 800%;
-}
-
