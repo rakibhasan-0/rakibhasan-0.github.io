@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheRobotS Project Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar (You can reuse the one from your main page if needed) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Rakib Hasan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Details -->
+    <div class="container mt-5">
+        <h2>Robot Project</h2>
+        <p>
+            A GUI-based Java project that features three types of robots: Random Robot, Memory Robot, and Right Hand Robot. Each robot has a unique way of navigating the maze to reach the goal.
+        </p>
+
+        <h5>Robots:</h5>
+        <ul>
+            <li>
+                <strong>Random Robot:</strong>
+                <ul>
+                    <li>Follows a random path in the maze.</li>
+                    <li>It will never backtrack to the previous step.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Memory Robot:</strong>
+                <ul>
+                    <li>Remembers the steps it has taken.</li>
+                    <li>Will never repeat a path it has already traversed.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Right Hand Robot:</strong>
+                <ul>
+                    <li>Always keeps a wall on its right-hand side to navigate.</li>
+                    <li>Designed to follow the wall and eventually find an exit if there is one.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Video Demo -->
+        <h3>Demo of the Program</h3>
+        <video controls width="100%">
+            <source src="https://raw.githubusercontent.com/rakibhasan-0/TheRobotS/main/ROBOT_FILM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
