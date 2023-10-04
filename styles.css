@@ -66,37 +66,3 @@ body {
 .card:nth-child(3) {
     animation-delay: 1.1s;
 }
-
-/* Ambition Animation: Sky & Stars */
-
-@keyframes riseStars {
-    0%, 100% {
-        transform: translateY(2%); /* Adjust this value for starting and ending position */
-    }
-    50% {
-        transform: translateY(-2%); /* Adjust this for peak height */
-    }
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    top: -2%; /* To account for the initial translateY */
-    left: 0;
-    right: 0;
-    height: 104%; /* Adjusted for the translateY */
-    z-index: -1;
-    background-image: 
-        radial-gradient(circle, white 40%, transparent 60%),
-        radial-gradient(circle, white 35%, transparent 55%);
-    background-position:
-        10% 90%, 
-        50% 60%, 
-        90% 40%, 
-        40% 80%, 
-        80% 75%, 
-        25% 55%, 
-        75% 35%;
-    background-size: 15px 15px;
-    animation: riseStars 10s ease-in-out infinite;
-}
