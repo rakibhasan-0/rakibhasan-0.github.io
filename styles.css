@@ -47,6 +47,7 @@ body {
 
 }
 
+
 .card {
     opacity: 0;
     animation: slideIn 0.5s forwards;
