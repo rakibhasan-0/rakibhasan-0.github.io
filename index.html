@@ -18,6 +18,53 @@
       background-color: purple;
       color: white;
    }
+      /* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease;
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.card {
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
+    animation-delay: 0.5s; /* This ensures the fade-in of the page completes before cards start sliding in */
+}
+
+/* Increasing delay for each project so they slide in one-by-one */
+.card:nth-child(1) {
+    animation-delay: 0.7s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.9s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 1.1s;
+}
+
+/* ... and so on for all project cards */
+
    </style>
 </head>
 
