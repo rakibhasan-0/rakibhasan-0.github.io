@@ -1,3 +1,4 @@
+/* Badge Styles */
 .badge-yellow {
     background-color: yellow;
     color: black;
@@ -8,6 +9,7 @@
     color: white;
 }
 
+/* Animation for fading in */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -28,14 +30,25 @@
     }
 }
 
-@keyframes gentleTwinkle {
-    0%, 100% {
-        opacity: 0.9;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    50% {
+    to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
+
+/* Animation for twinkling stars */
+@keyframes twinkling {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+/* Applying the animations to body and other elements */
 body {
     background-color: #111; /* Dark background */
     background-image: 
@@ -44,8 +57,9 @@ body {
         radial-gradient(white 1px, transparent 0);
     background-size: 30px 30px;
     background-position: 0 0, 15px 15px, 30px 30px;
-}
+    animation: twinkling 1.5s infinite alternate, fadeIn 1s ease;
 
+}
 
 .card {
     opacity: 0;
@@ -63,17 +77,6 @@ body {
 
 .card:nth-child(3) {
     animation-delay: 1.1s;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 #projects-section {
