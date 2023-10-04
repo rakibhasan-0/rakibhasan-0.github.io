@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System Details</title>
+</head>
+
+<body>
+
+<div style="max-width: 800px; margin: auto; padding: 20px;">
+    <h1>Inventory Management System</h1>
+    <p>
+        This Inventory Management System offers a user-friendly interface, allowing users to efficiently manage their items. The system lets users easily add or remove items, ensuring optimal inventory management and organization.
+    </p>
+    <p>
+        Technical Highlights:
+        <ul>
+            <li>ViewModel - For managing UI-related data in a lifecycle-conscious way.</li>
+            <li>Room - Robust database library for fluid data access.</li>
+            <li>RecyclerView - For efficiently displaying large sets of data.</li>
+            <li>Fragments - Modular pieces of UI.</li>
+            <li>Navigation - For effective UI navigation between app destinations.</li>
+        </ul>
+    </p>
+
+    <h2>Demo Video</h2>
+    <video width="720" controls>
+        <source src="https://raw.githubusercontent.com/rakibhasan-0/inventory_app/master/Inventory(1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+</body>
+</html>
