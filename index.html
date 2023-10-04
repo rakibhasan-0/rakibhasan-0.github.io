@@ -2,79 +2,78 @@
 <html lang="en">
 
 <head>
-    <!-- ... (other head content remains unchanged) ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakib Hasan's Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-light">
+<body>
 
-    <!-- ... (navigation bar content remains unchanged) ... -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Rakib Hasan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Introduction Section -->
-    <!-- ... (introduction content remains unchanged) ... -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Rakib Hasan, a passionate developer. Welcome to my portfolio.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <!-- You can add a picture of yourself here -->
+            </div>
+        </div>
+    </div>
 
     <!-- Projects Section -->
-    <div class="container mt-5 mb-5" id="projects">
-        <h2 class="display-4">My Projects</h2>
+    <div class="container mt-5" id="projects">
+        <h2>My Projects</h2>
 
-        <!-- Huffman Project -->
-        <div class="card mb-4 shadow">
+        <!-- Project 1 -->
+        <div class="card mb-4">
             <div class="card-body">
                 <h5 class="card-title">Huffman Project</h5>
                 <p class="card-text">Description about the Huffman project.</p>
                 <a href="https://github.com/rakibhasan-0/Huffman-" class="btn btn-primary">GitHub Repo</a>
-                <button class="btn btn-secondary" data-toggle="modal" data-target="#project1Modal">View Demo</button>
             </div>
         </div>
 
-        <!-- Modal for Huffman Project -->
-        <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="project1ModalLabel">Huffman Project Demo</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="https://github.com/rakibhasan-0/Huffman-" class="img-fluid"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- TheRobotS Project -->
-        <div class="card mb-4 shadow">
+        <!-- Project 2 -->
+        <div class="card mb-4">
             <div class="card-body">
                 <h5 class="card-title">TheRobotS Project</h5>
-                <p class="card-text">Description about TheRobotS project.</p>
+                <p class="card-text">Description about the TheRobotS project.</p>
                 <a href="https://github.com/rakibhasan-0/TheRobotS" class="btn btn-primary">GitHub Repo</a>
-                <button class="btn btn-secondary" data-toggle="modal" data-target="#project2Modal">View Demo</button>
             </div>
         </div>
 
-        <!-- Modal for TheRobotS Project -->
-        <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="project2ModalLabel">TheRobotS Project Demo</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <video controls class="img-fluid">
-                            <source src="https://raw.githubusercontent.com/rakibhasan-0/TheRobotS/main/ROBOT_FILM.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Add more projects as needed -->
+    </div>
 
-        <!-- Bootstrap JS and jQuery -->
-        <!-- ... (scripts content remains unchanged) ... -->
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
-    </body>
 </html>
