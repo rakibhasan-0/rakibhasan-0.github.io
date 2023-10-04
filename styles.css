@@ -40,7 +40,7 @@
     }
 }
 
-@keyframes twinkle {
+@keyframes gentleTwinkle {
     0%, 100% {
         opacity: 0.7;
     }
@@ -53,22 +53,19 @@ body {
     animation: fadeIn 1s ease, gradientBG 15s ease infinite;
     background: linear-gradient(270deg, #d53369, #daae51, #208ed8, #50c878);
     background-size: 400% 400%;
-    background-image: 
-        radial-gradient(circle, #ffffff 1px, transparent 2px), 
-        radial-gradient(circle, #ffffff 1px, transparent 2px),
-        radial-gradient(circle, #ffffff 1px, transparent 2px),
-        linear-gradient(270deg, #d53369, #daae51, #208ed8, #50c878);
+    background-image:
+        radial-gradient(circle, white 1px, transparent 1px),
+        radial-gradient(circle, white 1px, transparent 1px),
+        radial-gradient(circle, white 1px, transparent 1px);
     background-position: 
-        10% 20%, 
-        40% 40%, 
-        70% 80%, 
-        0 0; 
+        0 0, 
+        25px 50px, 
+        50px 100px;
     background-size: 
         50px 50px, 
-        70px 70px, 
-        100px 100px, 
-        400% 400%; 
-    animation: twinkle 1s infinite alternate, gradientBG 15s ease infinite;
+        50px 50px, 
+        50px 50px;
+    animation: gentleTwinkle 4s infinite alternate;
 }
 
 .card {
