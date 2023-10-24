@@ -1,10 +1,10 @@
-/* Badge Styles */
-.badge-yellow {
+/* Updated for Bootstrap 5 */
+.bg-yellow {
     background-color: yellow;
     color: black;
 }
 
-.badge-purple {
+.bg-purple {
     background-color: purple;
     color: white;
 }
