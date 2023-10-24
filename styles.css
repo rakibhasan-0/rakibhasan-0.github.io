@@ -1,4 +1,11 @@
-/* Updated for Bootstrap 5 */
+body {
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('path/to/your/image.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .bg-yellow {
     background-color: yellow;
     color: black;
