@@ -1,5 +1,5 @@
 body {
-    background-color: #1a1b2d; /* This is an approximation; you may need to adjust for an exact match */
+    background-color: #1a1b2d;
 }
 
 .bg-yellow {
@@ -12,3 +12,15 @@ body {
     color: white;
 }
 
+.headline-text{
+    font-weight: lighter;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.lang{
+    border-radius: 6px;
+    border:1px solid white;
+    background-color: chocolate;
+}
